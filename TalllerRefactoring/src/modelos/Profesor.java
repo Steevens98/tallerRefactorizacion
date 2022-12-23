@@ -2,7 +2,7 @@ package modelos;
 
 import java.util.ArrayList;
 
-public class Profesor {
+public class Profesor implements CalcularSueldo{
     public String codigo;
     public String nombre;
     public String apellido;
@@ -26,6 +26,11 @@ public class Profesor {
     
     public void anadirParalelos(Paralelo p){
         paralelos.add(p);
+    }
+
+    @Override
+    public double CalcularSueldo() {
+        return añosdeTrabajo*600 + BonoFijo;
     }
     
     

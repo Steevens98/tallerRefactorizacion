@@ -7,5 +7,5 @@ public class Materia {
     public double notaInicial;
     public double notaFinal;
     public double notaTotal;
-    
+
 }
